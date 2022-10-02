@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       *{
+        padding: 0px ;
+        margin: 0px;
+    }
+    body{
+        background-color: #fff8f1;
+        font-family: MuotoWeb,sans-serif;
+    } 
+    #img{
+      width: 25%;
+     margin: auto;
+    }
+    #img img{
+      height: 100px;
+    }
+    #header{
+        width: 30%;
+        margin: auto;
+        margin-top: 20px;
+    }
+    #btn{
+      width: 40%;
+      margin: auto;
+    }
+    #btn button{
+      display: flex;
+      gap: 10px;
+      justify-content: space-between;
+      margin-top: 30px;
+      color:#4a4b49 ;
+      padding: 10px 150px 10px 150px;
+        background-color:#ffffff;
+        border-radius: 15px;
+        border: 1px solid #4a4b49;
+        font-size: 17px;
+        cursor: pointer;
+        align-items: center;
+    }
+    #btn button:hover{
+      border: 2px solid black;
+      transition: 0.3s;
+    }
+    #btn button img{
+      height: 20px;
+    }
+    #below{
+      width: 40%;
+      margin: auto;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      color:#4a4b49 ;
+      margin-top: 20px;
+    }
+    #input{
+      width: 40%;
+      margin: auto;
+      margin-top: 20px;
+    }
+    #input>div{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+    #input p{
+      font-size: 17px;
+      font-weight: 700;
+      color:#4a4b49 ;
+    }
+    input{
+      font-size: 20px;
+     
+      width: 90%;
+      margin: auto;
+      margin-top: 10px;
+      margin-left: 20px;
+      padding: 5px;
+    }
+    #bottom-btn button{
+      padding: 10px 200px 10px 200px;
+        background-color:#188433;
+        border-radius: 15px;
+        font-size: 17px;
+        color: #fff;
+        cursor: pointer;
+        align-items: center;
+        border: none;
+        margin-left: 20px;
+    }
+    #bottom-btn button:hover{
+     filter: grayscale(40%);
+      transition: 0.1s;
+    }
+    #bottom-btn{
+      width: 40%;
+      margin: auto;
+      padding-bottom: 10px;
+      margin-top: 20px;
+    }
+    #forgot{
+        width: 40%;
+        margin: auto;
+        display: flex;
+        gap: 30px;
+        margin-top: 10px;
+    }
+    #forgot p{
+        margin-left: 20px;
+        color:#4a4b49 
+    }
+    #show-box{
+    width: 20%;
+    margin: auto;
+  }
+    </style>
+</head>
+<body>
+    <div id="img">
+        <img onclick="harvest()" src="https://logos-world.net/wp-content/uploads/2022/04/Harvest-Logo.png" alt="">
+    </div>
+    <div id="show-box">
+        <h4 id="show"></h4>
+      </div>
+    <div id="header">
+        <h1>Sign in to Harvest</h1>
+    </div>
+    <div id="container">
+        <div id="btn">
+            <button><img src="https://img.icons8.com/color/2x/google-logo.png" alt=""><p>Sign Up with Google</p></button>
+        </div>
+        <div id="below">
+            <div>
+              <hr width="130px" size="1">
+            </div>
+           <p>or with your email below</p>
+           <div>
+            <hr width="130px" size="1">
+           </div>
+          </div>
+          <div id="input">
+            <input id="email" type="text" placeholder="Work email">
+            <input id="password" type="password" placeholder="Password">
+          </div>
+          <div id="bottom-btn">
+            <button onclick="sign()">Sign in</button>
+          </div>
+    </div>
+    <div id="forgot">
+        <p>Forgot password?</p>
+        <p>Terms of service</p>
+        <p>Privacy policy</p>
+    </div>
+</body>
+</html>
+<script>
+    let arr=JSON.parse(localStorage.getItem("credential"))||[]
+    let show=document.querySelector("#show")
+    function sign(){
+        let count=0
+        let email=document.querySelector("#email").value
+        let password=document.querySelector("#password").value
+        
+        arr.forEach(function(el){
+            if(email==el.email&&password==el.password){
+           
+            count++
+        }
+        if(count!=0){
+            show.innerText="You logged in successfully"
+            show.style.color="green"
+        }
+        else{
+            show.innerText="You enter wrong credentials"
+            show.style.color="red"
+        }
+        
+        })
+        
+    }
+    function harvest(){
+      window.location.href="index.html"
+    }
+</script>

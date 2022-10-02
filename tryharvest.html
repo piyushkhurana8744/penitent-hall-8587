@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        padding: 0px ;
+        margin: 0px;
+    }
+    body{
+        background-color: #fff8f1;
+        font-family: MuotoWeb,sans-serif;
+    }
+    #container{
+      padding-bottom: 30px;
+    }
+
+    #img{
+      width: 40%;
+     margin: auto;
+    }
+    #img img{
+      height: 100px;
+    }
+    #header{
+      width: 40%;
+      margin: auto;
+    }
+    #header p{
+      margin-top: 10px;
+      color:#4a4b49 ;
+    }
+    #header button{
+      display: flex;
+      gap: 10px;
+      justify-content: space-between;
+      margin-top: 30px;
+      color:#4a4b49 ;
+      padding: 10px 150px 10px 150px;
+        background-color:#ffffff;
+        border-radius: 15px;
+        border: 1px solid #4a4b49;
+        font-size: 17px;
+        color: #fff;
+        cursor: pointer;
+        align-items: center;
+    }
+    #header button:hover{
+      border: 2px solid black;
+      transition: 0.3s;
+    }
+    #header button img{
+      height: 20px;
+    }
+    #header button p{
+      margin-top: -1px;
+    }
+    #below{
+      width: 40%;
+      margin: auto;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      color:#4a4b49 ;
+    }
+    #input{
+      width: 40%;
+      margin: auto;
+      padding-bottom: 45px;
+    }
+    #input>div{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+    #input p{
+      font-size: 17px;
+      font-weight: 700;
+      color:#4a4b49 ;
+    }
+    input{
+      font-size: 17px;
+      padding: 5px;
+      width: 300px;
+    }
+    #bottom-btn button{
+      padding: 10px 150px 10px 150px;
+        background-color:#188433;
+        border-radius: 15px;
+        font-size: 17px;
+        color: #fff;
+        cursor: pointer;
+        align-items: center;
+        border: none;
+        margin-left: 25px;
+    }
+    #bottom-btn button:hover{
+     filter: grayscale(40%);
+      transition: 0.1s;
+    }
+    #bottom-btn{
+      width: 40%;
+      margin: auto;
+      padding-bottom: 10px;
+      margin-top: -40px;
+      
+    }
+    #customer{
+      width: 40%;
+      margin: auto;
+      display: flex;
+      gap: 5px;
+      color: #4a4b49;
+    }
+  a{
+    color: #4a4b49;
+  }
+  #terms{
+    width: 40%;
+    margin: auto;
+    color: #4a4b49;
+    font-size: 12px;
+    margin-top: 10px;
+    font-weight: 600;
+  }
+  #body{
+    padding-bottom: 60px;
+  }
+  #show-box{
+    width: 20%;
+    margin: auto;
+  }
+  h4{
+    color: #188433;
+  }
+    </style>
+    
+</head>
+<body>
+  <div id="body">
+    <div id="container">
+      <div id="img">
+        <img onclick="harvest()" src="https://logos-world.net/wp-content/uploads/2022/04/Harvest-Logo.png" alt="">
+      </div>
+      <div id="show-box">
+        <h4 id="show"></h4>
+      </div>
+      <div id="header">
+        <h1>Start your free 30-day trial.</h1>
+        <p>Fully functional. No credit card required.</p>
+        <button><img src="https://img.icons8.com/color/2x/google-logo.png" alt=""><p>Sign Up with Google</p></button>
+      </div>
+    </div>
+    <div id="below">
+      <div>
+        <hr width="130px" size="1">
+      </div>
+     <p>or with your email below</p>
+     <div>
+      <hr width="130px" size="1">
+     </div>
+    </div>
+    <div id="input">
+      <div>
+        <p>First name</p>
+        <input type="text">
+      </div>
+      <div>
+        <p>Last name</p>
+        <input type="text">
+      </div>
+      <div>
+        <p>Company name</p>
+        <input type="text">
+      </div>
+      <div>
+        <p>Work email</p>
+        <input id="email" type="text">
+      </div>
+      <div>
+        <p>Password</p>
+        <input id="password" type="text">
+      </div>
+      <div>
+      </div>
+    </div>
+    <div id="bottom-btn">
+      <button onclick="sign()">Create my account</button>
+    </div>
+    <div id="customer">
+       <p>Already a customer?</p>
+       <p><a href="signin.html">Sign in</a></p>
+    </div>
+    <div id="terms">
+     <p>By creating an account, you agree to the Harvest Terms of service and Privacy policy.</p>
+    </div>
+  </div>
+    
+    
+    
+</body>
+</html>
+<script>
+  let arr=JSON.parse(localStorage.getItem("credential"))||[]
+  function sign(){
+    document.querySelector("#show").innerText="You signed in successfully"
+    let obj={
+      email:document.querySelector("#email").value,
+       password:document.querySelector("#password").value
+    }
+    arr.push(obj)
+    localStorage.setItem("credential",JSON.stringify(arr))
+  }
+  function harvest(){
+      window.location.href="index.html"
+    }
+</script>

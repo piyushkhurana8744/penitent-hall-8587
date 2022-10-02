@@ -1,0 +1,65 @@
+#navbar{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #fff8f1;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    justify-content: center;
+    align-items:center;
+    gap: 20px;
+   position: fixed;
+   width: 100%;
+   top: 0px
+}
+
+
+img{
+    height: 100px;
+    width: 90%;
+}
+#logo{
+    width: 65%;
+    display: flex;
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    
+}
+#navbar p{
+    font-family: "MuotoWeb","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+   color: #616161;
+   cursor: pointer;
+   
+}
+#navbar p:hover{
+    transition: color .2s,background .2s;
+    color: #fa5d00;
+    
+}
+a{
+    text-decoration: none;
+    
+}
+a:hover{
+    color:#fa5d00  ;
+}
+#navbar_sign{
+/* border: 1px solid; */
+width: 25%;
+display: flex;
+gap: 20px;
+justify-content: center;
+align-items: center;
+}
+#navbar button{
+padding: 10px 20px 10px 20px;
+background-color:#fa5d00 ;
+border-radius: 15px;
+border: none;
+font-size: 20px;
+color: #fff;
+cursor: pointer;
+}

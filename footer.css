@@ -1,0 +1,75 @@
+#footer-flex{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+    
+}
+#footer-left{
+    width: 30%;
+}
+#footer-left img{
+  width: 80%;
+  height: 40%;
+  margin-top: 20px; 
+}
+#footer-right{
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(autto);
+     justify-content: space-between;
+    margin: auto;
+    padding: 20px;
+    color: #ffff;
+    margin-top: 40px;
+    
+}
+
+#footer-right>div{
+    line-height: 40px;
+    color: #ffff;
+}
+#footer-right p{
+    font-size: 20px;
+}
+#footer-right p:hover{
+    color: #fa5d00;
+    transition: background .5s;
+}
+#footer button{
+    padding: 10px 80px 10px 80px;
+    border: 1px solid rgba(255,248,241,10%);;
+    background-color: #1d1e1c;
+    border-radius: 15px;
+    font-size: 18px;
+    color: rgba(255,248,241,60%);
+    text-align: center;
+    cursor: pointer;
+}
+#footer button:hover{
+    transition: background .2s;
+    cursor: pointer;
+    background: rgb(50, 50, 50);
+}
+#footer-bottom{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 30px;
+    color: rgba(255,248,241,60%);
+    padding-bottom: 40px;
+    
+}
+#footer-bottom-logo{
+    display: flex;
+    gap: 30px;
+}
+#footer-bottom-logo h3:hover{
+    color: #fa5d00;
+}
+a{
+    color: #fff;
+}

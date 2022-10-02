@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <script src="https://kit.fontawesome.com/0c167b58fa.js" crossorigin="anonymous"></script>
+   <style>
+    *{
+            padding: 0px ;
+            margin: 0px;
+        }
+        body{
+            background-color: #fff8f1;
+            font-family: MuotoWeb,sans-serif;
+        }
+    #container{
+      width: 90%;
+      margin: auto;
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+    #container p{
+      font-size: 35px;
+    }
+    .container-flex-box{
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      
+      
+    }
+    #container-flex-box1{
+      width: 30%;
+      
+    }
+    #container-flex-box1-flex{
+      display: flex;
+    }
+    #container-flex-box1 p{
+      font-size: 30px;
+    }
+    #container-flex-box1 p+p{
+      margin-top: 20px;
+      font-size: 60px;
+    }
+    #container-flex-box0{
+      width: 60%;
+      
+    }
+    #container-flex-box0 p{
+      color: #fa5d3e;
+    }
+    #container-flex-box0 p+div{
+      margin-top: 30px;
+    }
+    #container-flex-box0 p+div p{
+      font-size: 20px;
+      color: #1d1e1c;
+    }
+    #time p{
+      font-size: 16px;
+      color: #6D6E6D;
+    }
+    #container-flex{
+      width: 40%;
+      border: 1px solid#fa5d00 ;
+      margin-top: 40px;
+      padding: 20px;
+      width: 35%;
+      border-top-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+    #container button{
+      padding: 10px 90px 10px 90px;
+        background-color:#188433 ;
+        border-radius: 15px;
+        border: none;
+        font-size: 17px;
+        color: #fff;
+        cursor: pointer;
+        
+    }
+    #container button:hover{
+      background-color: #9adfab;
+      color: #1d1e1c;
+    }
+    #credit{
+      width: 80%;
+      margin: auto;
+      margin-top: 20px;
+        text-align: center;
+       
+    }
+    #credit p{
+      font-size: 14px;
+      margin-top: 10px;
+      color: #6D6E6D;
+      font-weight: bold;
+    }
+    #header{
+      text-align: center;
+      margin-top: 140px;
+      font-size: 42px;
+    }
+    #top-down{
+        width: 90%;
+        margin: auto;
+        margin-top: 50px;
+       }
+       #container-top-down{
+        display: grid;
+        display: grid;
+        grid-template-columns: repeat(8,1fr);
+        grid-template-rows: repeat(1,120px);
+        gap: 20px;
+        
+       }
+       #container-top-down>div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       }
+       #container-top-down img{
+        width: 100%;
+        height:40%;
+        opacity: .5;
+       }
+       #top-down-header{
+        display: flex;
+        gap: 10px;
+       }
+       #top-down-header h1{
+        font-size: 25px;
+       }
+       #container-mid1{
+        width: 90%;
+        margin: auto;
+        padding-bottom: 80px;
+       }
+       #container-mid1-grid{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(1,auto);
+        gap: 30px;
+        margin-top: 70px;
+       }
+       #container-mid1-grid>div{
+        text-align: center;
+       }
+       #container-mid1-grid img{
+        height: 70px;
+       }
+       #container-mid1-grid h2{
+        font-size: 20px;
+        margin-top: 10px;
+       }
+       #container-mid1-grid>div p{
+        margin-top: 10px;
+        color: #6D6E6D;
+       }
+       #feature{
+        font-size: 40px;
+        text-align: center;
+        margin-top: 50px;
+       }
+       #container-mid2{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        margin-top: 50px;
+        padding-bottom: 50px;
+        justify-content: space-between;
+       }
+       #container-mid2-flex{
+        width: 30%;
+        border: 1px solid#fa5d00 ;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        padding: 10px;
+        justify-content: center;
+        border-top-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+
+       }
+       #container-mid2-flex p{
+        font-size: 16px;
+        margin-top: 10px;
+        color: #6D6E6D;
+       }
+       #faq-page{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        margin-top: 50px;
+        padding-bottom: 50px;
+        
+       }
+       #faq-page-left{
+        width: 40%;
+        margin-top: 30px;
+       }
+       #faq-page-left h1{
+        font-size: 30px;
+       }
+       #faq-page-right{
+        width: 50%;
+       }
+
+       #faq1{
+        padding: 20px;
+        text-align: center;
+       }
+       #faq1:hover{
+        
+        background-color: #faeae3;
+        transition: background .2s;
+       }
+       .question p+p{
+        margin-left: 20px;
+       }
+       .question{
+        display: flex;
+        font-size: 24px;
+       }
+       .answer{
+         margin-top: 20px;
+         display: none;
+         font-size: 18px;
+         line-height: 30px;
+       }
+       .answer1{
+         margin-top: 20px;
+         display: none;
+         font-size: 18px;
+         line-height: 30px;
+       }
+       .answer2{
+         margin-top: 20px;
+         display: none;
+         font-size: 18px;
+         line-height: 30px;
+       }
+       .answer3{
+         margin-top: 20px;
+         display: none;
+         font-size: 18px;
+         line-height: 30px;
+       }
+       .answer4{
+         margin-top: 20px;
+         display: none;
+         font-size: 18px;
+         line-height: 30px;
+       }
+       .answer5{
+         margin-top: 20px;
+         display: none;
+         font-size: 18px;
+         line-height: 30px;
+       }
+       .answer6{
+         margin-top: 20px;
+         display: none;
+         font-size: 18px;
+         line-height: 30px;
+       }
+       .answer7{
+         margin-top: 20px;
+         display: none;
+         font-size: 18px;
+         line-height: 30px;
+       }
+       .none{
+        display:block;
+       }
+      #footer-up{
+        width:90%;
+        margin: auto;
+        margin-top: 50px;
+        padding-bottom: 50px;
+      }
+       #footer-up-grid{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(1,auto);
+        gap:20px;
+        /* text-align: center; */
+       }
+       #footer-up-grid>div{
+        padding: 10px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+       }
+       #footer-up-flex img{
+        height: 20px;
+        width: 50%;
+        margin-top: 20px;
+       }
+       #footer-up-flex{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+       }
+       #footer-up-flex p{
+        font-size: 15px;
+        margin-top: 15px;
+       }
+       #comment{
+        margin-top: 20px;
+        font-size: 17px;
+        color: #6D6E6D;
+       }
+       #name{
+        margin-top: 10px ;
+        font-size: 17px;
+        color: #6D6E6D;
+
+      }
+      #first{
+        text-align: center;
+        line-height: 50px;
+      }
+      #first h3{
+        font-size: 30px;
+        margin-top: 30px;
+      }
+      #first img{
+        height: 30px;
+      }
+      #footer-up button{
+        padding: 10px 20px 10px 20px;
+        background-color:#fa5d00 ;
+        border-radius: 15px;
+        border: none;
+        font-size: 20px;
+        color: #fff;
+        cursor: pointer;
+        margin-top: 40px ;
+      
+      }
+      #footer-up button:hover{
+        transition: 0.7s;
+      filter: grayscale(20%);
+        transition: background .2s;
+      }
+      #btn{
+        width: 25%;
+        margin: auto;
+      }
+      #navbar_sign a{
+        color: #616161;
+        text-decoration: none;
+      }
+      #navbar_sign a:hover{
+        color: #fa5d00;
+      }
+      
+
+   </style>
+</head>
+<body>
+    <div id="navbar">
+        <div id="logo">
+          <a id="home" href="index.html">
+            <img src="https://logos-world.net/wp-content/uploads/2022/04/Harvest-Logo.png" alt="">
+           </a>
+           <div class="vl">|</div>
+           <a href="why harvest.html"><p>Why harvest?</p></a>
+           <a href="features.html"><p>Features</p></a>
+           <a href="customers.html"><p>Customers</p></a>
+           <a href="integration.html"><p>Intrgretion</p></a>
+           <a href="pricing.html"><p>Pricing</p></a>
+        </div>
+        <div id="navbar_sign">
+          <p><a href="signin.html">Sign in</a></p>
+           <button onclick="harvest()">Try Harvest free</button>
+        </div>
+      </div>
+      <p id="header">Pricing</p>
+      <div id="container">
+        <div id="container-flex">
+          <div class="container-flex-box">
+            <div id="container-flex-box0">
+              <p>Free</p>
+              <div>
+                <p>1 seat</p>
+                <p>2 projects</p>
+              </div>
+             
+            </div>
+            <div id="container-flex-box1">
+              <div id="container-flex-box1-flex">
+                <p><i class="fa-regular fa-dollar-sign"></i></p>
+              <p>0</p>
+              </div>
+              <div id="time">
+                <p >forever</p>
+              </div>
+            </div>
+            
+          </div>
+          <div id="credit">
+            <button>30 days free trial</button>
+            <p>No credit card required</p>
+          </div>
+        </div>
+        <div id="container-flex">
+          <div class="container-flex-box">
+            <div id="container-flex-box0">
+              <p>Free</p>
+              <div>
+                <p>Unlimited seats</p>
+                <p>per seat per month</p>
+              </div>
+             
+            </div>
+            <div id="container-flex-box1">
+              <div id="container-flex-box1-flex">
+                <p><i class="fa-regular fa-dollar-sign"></i></p>
+              <p>12</p>
+              </div>
+              <div id="time">
+                <p >per seat per month</p>
+              </div>
+            </div>
+            
+          </div>
+          <div id="credit">
+            <button>30 days free trial</button>
+            <p>No credit card required</p>
+          </div>
+        </div>
+      </div>
+      <div id="top-down">
+        <div id="top-down-header">
+            <h1>70,000+ companies track time with Harvest</h1>
+            <div>
+                <hr width="700px" color="red"
+                size="1">
+            </div>
+        
+        </div>
+        
+        <div id="container-top-down">
+           <div>
+            <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/customer-logos/featured-vw.svg?noresize" alt="">
+           </div>
+           <div>
+            <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/customer-logos/featured-aclu.svg?noresize" alt="">
+           </div>
+           <div>
+            <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/customer-logos/featured-conde.svg?noresize" alt="">
+           </div>
+           <div>
+            <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/customer-logos/featured-dell.svg?noresize" alt="">
+           </div>
+           <div>
+            <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/customer-logos/featured-amnesty.svg?noresize" alt="">
+           </div>
+           <div>
+            <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/customer-logos/featured-deloitte.svg?noresize" alt="">
+           </div>
+           <div>
+            <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/customer-logos/featured-lululemon.svg?noresize" alt="">
+           </div>
+           <div>
+            <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/customer-logos/featured-yale.svg?noresize" alt="">
+           </div>
+        </div>
+        </div>
+        <hr width="100%;" color="red"
+        size="1">
+        <div id="container-mid1">
+          <p id="feature">Features</p>
+          <div id="container-mid1-grid">
+              <div>
+                <img src="https://res.cloudinary.com/spiralyze/image/upload/v1655459455/Harvest/4006-Harvest-Time-Tracking-LP-Feature-Grid/time-tracking.svg" alt="">
+                <h2>Time Tracking</h2>
+                <p>Start and stop tracking with 1-click. Apps for desktop, mobile, and web browser.</p>
+              </div>
+              <div>
+                <img src="https://res.cloudinary.com/spiralyze/image/upload/v1655459455/Harvest/4006-Harvest-Time-Tracking-LP-Feature-Grid/Reminders.svg" alt="">
+                <h2>Reminders</h2>
+                <p>Subtle reminders to track time. Never lose another hour.</p>
+              </div>
+              <div>
+                <img src="https://res.cloudinary.com/spiralyze/image/upload/v1655459453/Harvest/4006-Harvest-Time-Tracking-LP-Feature-Grid/Invoicing.svg" alt="">
+                <h2>Invoicing</h2>
+                <p>Automatically create invoices from tracked time and expenses.</p>
+              </div>
+              <div>
+                <img src="https://res.cloudinary.com/spiralyze/image/upload/v1655459453/Harvest/4006-Harvest-Time-Tracking-LP-Feature-Grid/Online-Payments.svg" alt="">
+                <h2>Online Payments</h2>
+                <p>Accept online payments. Sync with QuickBooks and Xero.</p>
+              </div>
+              <div>
+                <img src="https://res.cloudinary.com/spiralyze/image/upload/v1655459453/Harvest/4006-Harvest-Time-Tracking-LP-Feature-Grid/Reporting.svg" alt="">
+                <h2>Reporting</h2>
+                <p>Create reports across projects. Budgets, time, team capacity, cost breakdowns, etc.</p>
+              </div>
+              <div>
+                <img src="https://res.cloudinary.com/spiralyze/image/upload/v1655459453/Harvest/4006-Harvest-Time-Tracking-LP-Feature-Grid/Integrations.svg" alt="">
+                <h2>Integrations</h2>
+                <p>Integrate with 50+ apps including Asana, Basecamp, Trello, Slack, and more.</p>
+              </div>
+              <div>
+                <img src="https://res.cloudinary.com/spiralyze/image/upload/v1655459453/Harvest/4006-Harvest-Time-Tracking-LP-Feature-Grid/Budgets.svg" alt="">
+                <h2>Budgets</h2>
+                <p>Monitor project budgets. Get early alerts when projects take longer than budgeted.</p>
+              </div>
+              <div>
+                <img src="https://res.cloudinary.com/spiralyze/image/upload/v1655459456/Harvest/4006-Harvest-Time-Tracking-LP-Feature-Grid/Cost-Tracking.svg" alt="">
+                <h2>Cost Tracking</h2>
+                <p>See how much every project costs to complete. Drill down into details.</p>
+              </div>
+              <div>
+                <img src="https://res.cloudinary.com/spiralyze/image/upload/v1655459453/Harvest/4006-Harvest-Time-Tracking-LP-Feature-Grid/Expenses.svg" alt="">
+                <h2>Expenses</h2>
+                <p>Add project expenses in just a few clicks. Easily attach photos of receipts.</p>
+              </div>
+          </div>
+        </div>
+        <hr style="width:90%;margin:auto"
+        color="red" size="1"
+        >
+        <div id="container-mid2">
+          <div id="container-mid2-flex">
+            <div>
+              <img src="https://res.cloudinary.com/spiralyze/image/upload/v1656310941/Harvest/2016_Harvest_Pricing_Big_Redesign-20220621/Money.svg" alt="">
+            </div>
+            <div>
+              <h3>$7.4 billion</h3>
+              <p>Lost per day due to incorrectly recorded work activities</p>
+            </div>
+          </div>
+          <div id="container-mid2-flex">
+            <div>
+              <img src="https://res.cloudinary.com/spiralyze/image/upload/v1656310706/Harvest/2016_Harvest_Pricing_Big_Redesign-20220621/less-admintime.svg" alt="">
+            </div>
+            <div>
+              <h3>80%</h3>
+              <p>Less admin with automated time tracking</p>
+            </div>
+          </div>
+          <div id="container-mid2-flex">
+            <div>
+              <img src="https://res.cloudinary.com/spiralyze/image/upload/v1656311111/Harvest/2016_Harvest_Pricing_Big_Redesign-20220621/Employee_Tracking.svg" alt="">
+            </div>
+            <div>
+              <h3>$52,000</h3>
+              <p>Extra billable time per employee with better time tracking</p>
+            </div>
+          </div>
+        </div>
+        <hr style="width:100%;margin:auto"
+        color="red" size="1"
+        >
+        <div id="faq-page">
+          <div id="faq-page-left">
+            <h1>Frequently asked questions</h1>
+          </div>
+          <div id="faq-page-right">
+            <hr style="width:100%;margin:auto"
+        color="red" size="1"
+        >
+          <div id="faq1">
+            <div class="question">
+              <p>How do i sign up for free plan</p>
+           <p class="icon"><i class="fa-solid fa-chevron-down"></i></p>
+            </div>
+           
+           <div class="answer">
+            When your trial account meets <span style="color:#fa5d00;font-weight:bolder">the free plan’s requirements</span> the free plan’s requirements, you can sign up for the free version during the upgrade process.<span style="font-weight:bolder">On the Upgrade Your Harvest Plan page</span> On the Upgrade Your Harvest Plan page, click the <span style="font-weight:bolder"> switch to the free version</span> link below the plan options.
+           </div>
+          </div>
+          <hr style="width:100%;margin:auto"
+          color="red" size="1"
+          >
+          <hr style="width:100%;margin:auto"
+        color="red" size="1"
+        >
+          <div id="faq1">
+            <div class="question">
+              <p>
+                What happens at the end of my trial?
+                </p>
+           <p class="icon1"><i class="fa-solid fa-chevron-down"></i></p>
+            </div>
+           
+           <div class="answer1">
+            You can upgrade to a paid plan any time during your 30-day trial period. If you haven’t upgraded at the end of 30 days, your trial account will be automatically deactivated. We don’t collect credit card info when you start a trial, so you don’t need to worry about being charged.
+
+Even though your trial account will be deactivated, we won’t delete your data. If you ever want to try Harvest again in the future, your data will be waiting for you.
+
+If you’re looking to switch to the free plan, you can do that any time during your trial as well. You’ll see that option during the upgrade process as long as your account meets the <span style="color:#fa5d00;font-weight:bolder">free plan’s requirements.</span> free plan’s requirements.
+           </div>
+          </div>
+          <hr style="width:100%;margin:auto"
+          color="red" size="1"
+          ><hr style="width:100%;margin:auto"
+          color="red" size="1"
+          >
+            <div id="faq1">
+              <div class="question">
+                <p>
+                  Does my team qualify for any discounts?
+                  </p>
+             <p class="icon2"><i class="fa-solid fa-chevron-down"></i></p>
+              </div>
+             
+             <div class="answer2">
+              Yes! When you <span style="font-weight:bolder">pay for the year up front, you get a 10% discount</span>  that’s automatically applied to your account.
+
+              We also offer <span style="color:#fa5d00;font-weight:bolder" >discounts upon request</span>  to teams of <span style="font-weight:bolder"> 50+ people, nonprofits, schools and universities, educators using Harvest in a classroom setting, and students.</span> 
+             </div>
+            </div>
+            <hr style="width:100%;margin:auto"
+            color="red" size="1"
+            ><hr style="width:100%;margin:auto"
+            color="red" size="1"
+            >
+              <div id="faq1">
+                <div class="question">
+                  <p> How can I get a quote for my team?</p>
+               <p class="icon3"><i class="fa-solid fa-chevron-down"></i></p>
+                </div>
+               
+               <div class="answer3">
+                Use our handy <span style="color:#fa5d00;font-weight:bolder">pricing calculator</span>  to see how much your team would pay for Harvest and what discounts could apply.
+               </div>
+              </div>
+              <hr style="width:100%;margin:auto"
+              color="red" size="1"
+              ><hr style="width:100%;margin:auto"
+              color="red" size="1"
+              >
+                <div id="faq1">
+                  <div class="question">
+                    <p> What are our payment options?</p>
+                 <p class="icon4"><i class="fa-solid fa-chevron-down"></i></p>
+                  </div>
+                 
+                 <div class="answer4">
+                  You can pay for Harvest via credit card either monthly or yearly. If you pay for the year in advance, you’ll get a 10% discount on your bill!
+
+If you have 10 or more seats and pay for the year in advance, you can also request an invoice when you upgrade and pay for your subscription via check or bank transfer.
+                 </div>
+                </div>
+                <hr style="width:100%;margin:auto"
+                color="red" size="1"
+                ><hr style="width:100%;margin:auto"
+                color="red" size="1"
+                >
+                  <div id="faq1">
+                    <div class="question">
+                      <p> What happens if my team size changes?</p>
+                   <p class="icon5"><i class="fa-solid fa-chevron-down"></i></p>
+                    </div>
+                   
+                   <div class="answer5">
+                    If you’re paying monthly, you can add or remove seats at any time. Your price will be adjusted on your next monthly bill. If you have contractors or interns, or you anticipate the number of seats you’ll need may fluctuate from month to month, the monthly option is a better fit for you.
+
+If you paid for the year in advance, you can add seats at any time and will be charged a prorated amount based on the number of days left in your billing cycle. While you can’t remove seats during your current billing cycle, you can indicate inside your account if you’d like your yearly plan to renew with fewer seats. Keep in mind that yearly accounts receive a 10% discount, so if your seat requirements don’t change from month to month, yearly is probably the best option for you.
+                   </div>
+                  </div>
+                  <hr style="width:100%;margin:auto"
+                  color="red" size="1"
+                  ><hr style="width:100%;margin:auto"
+                  color="red" size="1"
+                  >
+                    <div id="faq1">
+                      <div class="question">
+                        <p> Can we switch our billing frequency?</p>
+                     <p class="icon6"><i class="fa-solid fa-chevron-down"></i></p>
+                      </div>
+                     
+                     <div class="answer6">
+                       <span style="font-weight:bolder">If you’re paying monthly,</span>  you can switch to yearly payment at any time (and you’ll receive a 10% discount for doing so!).
+
+ <span style="font-weight:bolder">If you paid for the year in advance,</span> you can switch to monthly payment at the end of your current yearly billing cycle, but keep in mind that the 10% discount will be removed. To make the change, reach out to our support team during the month before your renewal.
+                     </div>
+                    </div>
+                    
+                      <hr style="width:100%;margin:auto"
+                      color="red" size="1"
+                      >
+          </div>
+          
+        </div>
+        <hr width="100%;" color="red"
+        size="1">
+        <div id="footer-up">
+          <div id="footer-up-grid">
+            <div id="first">
+              <h3>Excellent</h3>
+              <img src="https://res.cloudinary.com/spiralyze/image/upload/v1653372983/Harvest/4002_Harvest_Time_Tracking_LP_Lock_Hero_G2_Ribbon/Excellent_Review_Stars.svg" alt="">
+              <p>Based on 748 reviews</p>
+              <img src="https://res.cloudinary.com/spiralyze/image/upload/v1653544620/Harvest/4002_Harvest_Time_Tracking_LP_Lock_Hero_G2_Ribbon/logo-G2.svg" alt="">
+            </div>
+            <div>
+              <div id="footer-up-flex">
+                <img src="https://res.cloudinary.com/spiralyze/image/upload/v1656580238/Harvest/2016_Harvest_Pricing_Big_Redesign-20220621/Star_Rating.svg" alt="">
+                <p>5 days ago</p>
+              </div>
+              <p id="comment">“Harvest is great. It has LITERALLY changed the way we work. Makes our staffing and budgeting estimates VERY easy.”</p>
+              <hr style="margin-top:10px; width:40%">
+              <p id="name">Brock P</p>
+            </div>
+            <div>
+              <div id="footer-up-flex">
+                <img src="https://res.cloudinary.com/spiralyze/image/upload/v1656580238/Harvest/2016_Harvest_Pricing_Big_Redesign-20220621/Star_Rating.svg" alt="">
+                <p>6 days ago</p>
+              </div>
+              <p id="comment">“We’ve tried using other solutions and end up coming back to Harvest. Exceptionally easy to use and does its job extremely well.”</p>
+              <hr style="margin-top:10px; width:40%">
+              <p id="name">Mathew T.</p>
+            </div>
+            <div>
+              <div id="footer-up-flex">
+                <img src="https://res.cloudinary.com/spiralyze/image/upload/v1656580238/Harvest/2016_Harvest_Pricing_Big_Redesign-20220621/Star_Rating.svg" alt="">
+                <p>7 days ago</p>
+              </div>
+              <p id="comment">“I've tried numerous other invoicing tools but none compare to the stability, quality, and reliability of Harvest. You just can't beat it.”</p>
+              <hr style="margin-top:10px; width:40%">
+              <p id="name">Jonathan S.</p>
+            </div>
+          </div>
+          <div id="btn"><button>Back to Plan and pricing</button></div>
+          
+        </div>
+        <div id="footer" style="background-color:#1d1e1c;padding-bottom: 20px;">
+          <div id="footer-flex">
+              <div id="footer-left">
+                  <img src="https://logos-world.net/wp-content/uploads/2022/04/Harvest-Logo.png" alt="">
+               </div>
+               <div id="footer-right">
+                 <div>
+                  <h2>Harvest</h2>
+                  <p><a href="index.html">Home</a></p>
+                <p><a href="why harvest.html">Why Harvest?</a></p>
+                <p><a href="features.html">Features</a></p>
+                <p><a href="pricing.html">Pricing</a></p>
+                <p><a href="integration.html">Integrations</a></p>
+                  <p>Apps</p>
+                  <p>Security</p>
+                 </div>
+                 <div>
+                  <h2>Community</h2>
+                  <p>Customer stories</p>
+                  <p>Resources</p>
+                  <p>Webinars</p>
+                  <p>Help & support</p>
+                  <p>Integrate with Harvest</p>
+                  <p>Time Well Spent</p>
+                  <p>Time in This Time</p>
+                 </div>
+                 
+                 <div style="line-height:30px;margin-left: 30px;">
+                  <h2>Company</h2>
+                  <p>About us</p>
+                  <p>Blog</p>
+                  <p>Careers</p>
+                  <p>Legal</p>
+                  <p>Contact us</p>
+                 </div>
+               </div>
+          </div>
+          <div style="width:80%;margin:auto">
+              <button>We also make: Harvest Forecast - the fast and simple way to schedule your team across projects.</button>
+          </div>
+           <div id="footer-bottom">
+              <h3>© 2006-2022 Harvest</h3>
+              <div id="footer-bottom-logo">
+                  <h3><i class="fa-brands fa-twitter"></i> <span>Twitter</span></h3>
+                  <h3><i class="fa-brands fa-linkedin"></i> <span>Linkedin</span></h3>
+                  <h3><i class="fa-brands fa-instagram"></i> <span>Instagram</span></h3>
+              </div>
+           </div>
+        </div>
+</body>
+</html>
+<script>
+  document.querySelector(".icon").addEventListener("click",change)
+  function change(event){
+    console.log(event.target)
+    let box=document.querySelector(".answer") 
+    box.classList.toggle("none")
+  }
+  document.querySelector(".icon1").addEventListener("click",change1)
+  function change1(event){
+    console.log(event.target)
+    let box=document.querySelector(".answer1") 
+    box.classList.toggle("none")
+  }
+  document.querySelector(".icon2").addEventListener("click",change2)
+  function change2(event){
+    console.log(event.target)
+    let box=document.querySelector(".answer2") 
+    box.classList.toggle("none")
+  }
+  document.querySelector(".icon3").addEventListener("click",change3)
+  function change3(event){
+    console.log(event.target)
+    let box=document.querySelector(".answer3") 
+    box.classList.toggle("none")
+  }
+  document.querySelector(".icon4").addEventListener("click",change4)
+  function change4(event){
+    console.log(event.target)
+    let box=document.querySelector(".answer4") 
+    box.classList.toggle("none")
+  }
+  document.querySelector(".icon5").addEventListener("click",change5)
+  function change5(event){
+    console.log(event.target)
+    let box=document.querySelector(".answer5") 
+    box.classList.toggle("none")
+  }
+  document.querySelector(".icon6").addEventListener("click",change6)
+  function change6(event){
+    console.log(event.target)
+    let box=document.querySelector(".answer6") 
+    box.classList.toggle("none")
+  }
+  document.querySelector(".icon7").addEventListener("click",change7)
+  function change7(event){
+    console.log(event.target)
+    let box=document.querySelector(".answer7") 
+    box.classList.toggle("none")
+  }
+  function harvest(){
+        window.location.href="tryharvest.html"
+    }
+</script>

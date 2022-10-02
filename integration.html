@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            background-color: #fff8f1;
+            font-family: MuotoWeb,sans-serif;
+        }
+        #navbar-down{
+            width: 90%;
+            margin: auto;
+            margin-top: 180px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+        #navbar-down-left{
+            width: 47%;
+        }
+        #navbar-down-left p{
+           font-size: 39px;
+        }
+        
+        #navbar-down p+p{
+            font-size: 24px;
+            color: #1d1e1c;
+            margin-top: 30px;
+        }
+        #navbar-down-right{
+            width: 45%;
+        }
+        #navbar-down-right img{
+            width: 90%;
+            height: 400px;
+        }
+        #container-mid{
+        width: 90%;
+         margin: auto;
+        margin-top: 50px;
+        padding-bottom: 80px;
+
+       }
+       #container-mid p{
+        font-size: 42px;
+       }
+       #container-mid-flex{
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+       }
+       #container-mid-flex-left{
+        width: 20%;
+       }
+       #container-mid-flex-left h3{
+        margin-top: 20px;
+       }
+       #container-mid-flex-right{
+        width: 70%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(auto,200px);
+        gap: 30px;
+       }
+       #container-mid-flex-right>div{
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        padding: 20px;
+       }
+       #container-mid-flex-right>div img{
+        width: 40%;
+        height: 50px;
+       }
+       #container-mid-flex-right p{
+        font-size: 18px;
+        color: #565656;
+        margin-top: 20px;
+       }
+       #container-mid-flex-right h2{
+        margin-top: 20px;
+       }
+       #container-mid-flex-left h3:hover{
+        transition: 0.7s;
+        color: #fa5d00;
+        background-color: #faeae3;
+        transition: background .2s;
+       }
+       #container-mid1{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 80px;
+       }
+       #container-mid1-left{
+        width: 30%;
+       }
+       #container-mid1-left img{
+        width:90%;
+        height: 300px;
+       }
+       #container-mid1-right{
+        width: 60%;
+
+       } 
+       #container-mid1-right p{
+        font-size: 42px;
+       }
+       #container-mid1-right p+p{
+        font-size: 29px;
+        color: #1d1e1c;
+        margin-top: 20px;
+       }
+       #container-mid1-right button{
+        padding: 10px 20px 10px 20px;
+        background-color:#1d1e1c ;
+        border-radius: 15px;
+        border: none;
+        font-size: 20px;
+        color: #fff;
+        cursor: pointer;
+        margin-top: 40px;
+       }
+       #footer-up{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        margin-top:70px ;
+        padding: 20px;
+        padding-bottom: 80px;
+    }
+    #footer-up-left{
+        width: 55%;
+    }
+    #footer-up-left img{
+        width: 60%;
+        height: 80%;
+    }
+    #footer-up-right{
+        width: 40%;
+    }
+    #footer-up-right img{
+        width:80%;
+        height: 80%;
+    }
+    #footer-up-left button{
+        padding: 10px 20px 10px 20px;
+        background-color:#fa5d00 ;
+        border-radius: 15px;
+        border: none;
+        font-size: 20px;
+        color: #fff;
+        cursor: pointer;
+    }
+    #navbar_sign a{
+        color: #616161;
+        text-decoration: none;
+      }
+      #navbar_sign a:hover{
+        color: #fa5d00;
+      }
+      
+    
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div id="logo">
+            <a id="home" href="index.html">
+                <img src="https://logos-world.net/wp-content/uploads/2022/04/Harvest-Logo.png" alt="">
+               </a>
+           <div class="vl">|</div>
+           <a href="why harvest.html"><p>Why harvest?</p></a>
+           <a href="features.html"><p>Features</p></a>
+           <a href="customers.html"><p>Customers</p></a>
+           <a href="integration.html"><p>Intrgretion</p></a>
+           <a href="pricing.html"><p>Pricing</p></a>
+        </div>
+        <div id="navbar_sign">
+            <p><a href="signin.html">Sign in</a></p>
+            <button onclick="harvest()">Try Harvest free</button>
+        </div>
+      </div>
+      <div id="navbar-down">
+       <div id="navbar-down-left">
+        <p>Time tracking integrated with your team’s favorite apps</p>
+        <p>Harvest works with the most popular tools so your team can track time effortlessly.</p>
+       </div>
+       <div id="navbar-down-right">
+        <img src="photo.png" alt="">
+       </div>
+      </div>
+      <hr style="width:90%;margin:auto"
+      color="red" size="1"
+      >
+      <div id="container-mid">
+        <div id="container-mid-flex">
+            <div id="container-mid-flex-left">
+                <h3 onclick="integration()">All Integration</h3>
+                <h3 onclick="analytics()">Analytics & reporting</h3>
+                <h3 onclick="browser()">Browser extension</h3>
+                <h3 onclick="communication()">Communication & CRM</h3>
+                <h3 onclick="contracts()">Contracts and Proposal</h3>
+                <h3 onclick="development()">Development & connectivity</h3>
+            </div>
+            <div id="container-mid-flex-right">
+
+            </div>
+        </div>
+      </div>
+      <hr style="width:90%;margin:auto"
+      color="red" size="1"
+      >
+      <div id="container-mid1">
+        <div id="container-mid1-left">
+            <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/illoglyphs/illo-180-integrations.svg" alt="">
+        </div>
+        <div id="container-mid1-right">
+            <p>Build your own Harvest integration</p>
+            <p>Extend the functionality of your app by easily adding Harvest timers, or build a bespoke integration with the Harvest API.</p>
+            <button>Browse options</button>
+        </div>
+      </div>
+      <hr width="100%;" color="red"
+     size="1">
+     <div id="footer-up">
+        <div id="footer-up-left">
+            <p style="font-size:50px">Start tracking time today</p>
+            <p style="color: #1d1e1c;font-size:30px;line-height: 40px;margin-top: 10px;">Join 70,000+ companies spending their time wisely with Harvest.</p>
+            <div style="display:flex;gap: 20px;margin-top: 20px;justify-content: center;align-items: center;">
+            <button>Try Harvest free</button>
+            <p style="font-size:22px;color: #846e6d;">Free 30-day trial. No credit card required.</p>
+            </div>
+            
+        </div>
+        <div id="footer-up-right">
+            <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/illoglyphs/footer-illo-comp.svg" alt="">
+        </div>
+      </div>
+      <div id="footer" style="background-color:#1d1e1c;padding-bottom: 20px;">
+        <div id="footer-flex">
+            <div id="footer-left">
+                <img src="https://logos-world.net/wp-content/uploads/2022/04/Harvest-Logo.png" alt="">
+             </div>
+             <div id="footer-right">
+               <div>
+                <h2>Harvest</h2>
+                <p><a href="index.html">Home</a></p>
+                <p><a href="why harvest.html">Why Harvest?</a></p>
+                <p><a href="features.html">Features</a></p>
+                <p><a href="pricing.html">Pricing</a></p>
+                <p><a href="integration.html">Integrations</a></p>
+                <p>Apps</p>
+                <p>Security</p>
+               </div>
+               <div>
+                <h2>Community</h2>
+                <p>Customer stories</p>
+                <p>Resources</p>
+                <p>Webinars</p>
+                <p>Help & support</p>
+                <p>Integrate with Harvest</p>
+                <p>Time Well Spent</p>
+                <p>Time in This Time</p>
+               </div>
+               
+               <div style="line-height:30px;margin-left: 30px;">
+                <h2>Company</h2>
+                <p>About us</p>
+                <p>Blog</p>
+                <p>Careers</p>
+                <p>Legal</p>
+                <p>Contact us</p>
+               </div>
+             </div>
+        </div>
+        <div style="width:80%;margin:auto">
+            <button>We also make: Harvest Forecast - the fast and simple way to schedule your team across projects.</button>
+        </div>
+         <div id="footer-bottom">
+            <h3>© 2006-2022 Harvest</h3>
+            <div id="footer-bottom-logo">
+                <h3><i class="fa-brands fa-twitter"></i> <span>Twitter</span></h3>
+                <h3><i class="fa-brands fa-linkedin"></i> <span>Linkedin</span></h3>
+                <h3><i class="fa-brands fa-instagram"></i> <span>Instagram</span></h3>
+            </div>
+         </div>
+      </div>
+</body>
+</html>
+<script>
+    let integrationarr=[
+        {img:"https://www.getharvest.com/hs-fs/hubfs/integrations-new/asana.png?width=200&name=asana.png",para:"Track time right from your Asana tasks without switching to Harvest.",name:"Asana"},
+        {img:"https://www.getharvest.com/hs-fs/hubfs/integrations-new/basecamp.png?width=200&name=basecamp.png",para:"Track time from your to-dos with a Harvest browser extension.",name:"Basecamp"},
+        {img:"https://www.getharvest.com/hs-fs/hubfs/integrations-new/github.png?width=200&name=github.png",para:"Track time from issues and pull requests with a Harvest browser extension.",name:"GitHub"},
+        {img:"https://www.getharvest.com/hs-fs/hubfs/integrations-new/slack.png?width=200&name=slack.png",para:"Start timers, check someone's status, and keep track of project budgets.",name:"Slack"},
+        {img:"https://www.getharvest.com/hs-fs/hubfs/integrations-new/trello.png?width=200&name=trello.png",para:"Track time from cards with the Harvest Power-Up or browser extension.",name:"Trello"},
+        {img:"https://www.getharvest.com/hs-fs/hubfs/integrations-new/qbo.png?width=200&name=qbo.png",para:"Copy Harvest invoices and recorded payments right into this accounting tool.",name:"QuickBooks Online"},
+        {img:"https://www.getharvest.com/hs-fs/hubfs/integrations-new/paypal.png?width=200&name=paypal.png",para:"Accept online payments through PayPal Standard.",name:"PayPal"},
+        {img:"https://www.getharvest.com/hs-fs/hubfs/integrations-new/chrome.png?width=200&name=chrome.png",para:"Track time right from your browser and popular project management tools.",name:"Chrome"},
+        {img:"https://www.getharvest.com/hs-fs/hubfs/integrations-new/outlook.png?width=200&name=outlook.png",para:"Pull your Outlook calendar events into your Harvest timesheet.",name:"Outlook.com"},
+        
+        
+    ]
+    let analyticsarr=[
+        {img:"https://www.getharvest.com/hs-fs/hubfs/integrations/coupler-logo.png?width=200&name=coupler-logo.png",para:"Export Harvest data to Google Sheets, Excel, and BigQuery",name:"Coupler.io"},
+        {img:"https://www.getharvest.com/hs-fs/hubfs/integrations/databox-icon@2x.png?width=200&name=databox-icon@2x.png",para:"Combine data from Harvest and other tools to create custom KPI dashboards.",name:"Databox"},
+        {img:"https://www.getharvest.com/hs-fs/hubfs/integrations/eazybi-icon@2x.png?width=200&name=eazybi-icon@2x.png",para:"Harvest timesheet reporting, interactive drag-and-drop charts, and dashboards.",name:"eazyBI"},
+        {img:"https://www.getharvest.com/hs-fs/hubfs/integrations/gosimplo.png?width=200&name=gosimplo.png",para:"Get business intelligence in five minutes.",name:"GoSimplo"},
+        {img:"https://www.getharvest.com/hs-fs/hubfs/integrations/herobi-icon@2x.png?width=200&name=herobi-icon@2x.png",para:"Include Harvest data in this performance tracker for your agency.",name:"heroBI"},
+        {img:"https://www.getharvest.com/hs-fs/hubfs/integrations/klipfolio-icon@2x.png?width=200&name=klipfolio-icon@2x.png",para:"Include your Harvest data in your Klipfolio dashboards.",name:"Klipfolio"},
+        {img:"https://www.getharvest.com/hs-fs/hubfs/integrations-new/parakeeto.png?width=200&name=parakeeto.png",para:"Create estimates in seconds using your Harvest data.",name:"Parakeeto"},
+        {img:"https://www.getharvest.com/hs-fs/hubfs/integrations/plecto-icon@2x-1.png?width=200&name=plecto-icon@2x-1.png",para:"Create real-time dashboards with your Harvest data.",name:"Plecto"},
+        {img:"https://www.getharvest.com/hs-fs/hubfs/integrations/price-cost-icon@2x.png?width=200&name=price-cost-icon@2x.png",para:"Sync Harvest timesheets and expenses to see which projects make or lose money.",name:"Price&Cost"},
+        
+        
+    ]
+    let browserarr=[
+    {img:"https://www.getharvest.com/hs-fs/hubfs/integrations-new/chrome.png?width=200&name=chrome.png",para:"Track time right from your browser and popular project management tools.",name:"Chrome"},
+        {img:"https://www.getharvest.com/hs-fs/hubfs/integrations-new/edge.png?width=200&name=edge.png",para:"Track time right from your browser and popular project management tools.",name:"Edge"},
+        {img:"https://www.getharvest.com/hs-fs/hubfs/integrations-new/firefox.png?width=200&name=firefox.png",para:"Track time right from your browser and popular project management tools.",name:"Firefox"},
+    ]
+    let communicationarr=[
+    {img:"https://www.getharvest.com/hs-fs/hubfs/integrations/akita-icon@2x.png?width=200&name=akita-icon@2x.png",para:"View a complete project and invoice history for each Harvest client.",name:"Akita"},
+        {img:"https://www.getharvest.com/hs-fs/hubfs/integrations-new/workspace.png?width=200&name=workspace.png",para:"Sign in with your Google account and export time data into Google Drive.",name:"Google Workspace"},
+        {img:"https://www.getharvest.com/hs-fs/hubfs/integrations/harvestsync-icon@2x.png?width=200&name=harvestsync-icon@2x.png",para:"Send your Harvest time entries to Salesforce.",name:"HarvestSync"},
+        {img:"https://www.getharvest.com/hs-fs/hubfs/integrations/harvey-icon@2x.png?width=200&name=harvey-icon@2x.png",para:"Bring Harvest time tracking reports into Slack.",name:"Harvey"},
+        {img:"https://www.getharvest.com/hs-fs/hubfs/integrations/plecto-icon@2x-1.png?width=200&name=plecto-icon@2x-1.png",para:"Create real-time dashboards with your Harvest data.",name:"Plecto"},
+        {img:"https://www.getharvest.com/hs-fs/hubfs/integrations-new/slack.png?width=300&name=slack.png",para:"Start timers, check someone's status, and keep track of project budgets.",name:"Slack"},
+        {img:"https://www.getharvest.com/hs-fs/hubfs/integrations-new/zendesk.png?width=200&name=zendesk.png",para:"A professional help desk tool where you can track time spent on tickets for billing.",name:"Zendesk"},
+        {img:"https://www.getharvest.com/hs-fs/hubfs/integrations-new/zendesk-sell.png?width=200&name=zendesk-sell.png",para:"Track time right from leads and deals in Zendesk.",name:"Zendesk Sell"},
+    ]
+    let contractsarr=[
+    {img:"https://www.getharvest.com/hs-fs/hubfs/integrations/bidsketch-icon@2x.png?width=200&name=bidsketch-icon@2x.png",para:"Create and track beautiful proposals, which can then be invoiced from Harvest.",name:"Bidsketch"},
+        {img:"https://www.getharvest.com/hs-fs/hubfs/integrations-new/formstack.png?width=200&name=formstack.png",para:"Generate custom invoices and letters with your Harvest data.",name:"Formstack"},
+        {img:"https://www.getharvest.com/hs-fs/hubfs/integrations-new/parakeeto.png?width=200&name=parakeeto.png",para:"Create estimates in seconds using your Harvest data.",name:"Parakeeto"},
+    ]
+    let developmentarr=[
+    {img:"https://www.getharvest.com/hs-fs/hubfs/integrations/coupler-logo.png?width=200&name=coupler-logo.png",para:"Export Harvest data to Google Sheets, Excel, and BigQuery",name:"Coupler.io"},
+        {img:"https://www.getharvest.com/hs-fs/hubfs/integrations/databox-icon@2x.png?width=200&name=databox-icon@2x.png",para:"Combine data from Harvest and other tools to create custom KPI dashboards.",name:"Databox"},
+        {img:"https://www.getharvest.com/hs-fs/hubfs/integrations-new/ifttt.png?width=200&name=ifttt.png",para:"Create simple connections between Harvest and the apps you use every day.",name:"IFTTT"},
+        {img:"https://www.getharvest.com/hs-fs/hubfs/integrations/integrately-icon@2x.png?width=200&name=integrately-icon@2x.png",para:"Integrate Harvest with 100’s of apps in 1 click.",name:"Integrately"},
+        {img:"https://www.getharvest.com/hs-fs/hubfs/integrations-new/zapier.png?width=200&name=zapier.png",para:"Connect Harvest to 1,000+ apps with automated workflows using Zapier.",name:"Zapier"},
+        {img:"https://www.getharvest.com/hs-fs/hubfs/integrations/zwapgrid-icon@2x.png?width=200&name=zwapgrid-icon@2x.png",para:"Seamless integration between Harvest and Fortnox.",name:"Zwapgrid"},
+    ]
+    displaydata(integrationarr)
+    function displaydata(integrationarr){
+          document.getElementById("container-mid-flex-right").innerHTML=""
+     integrationarr.forEach(function(el){
+      let div=document.createElement("div")
+        let img=document.createElement("img")
+        img.src=el.img
+        let p=document.createElement("p")
+        p.innerText=el.para
+        let h2=document.createElement("h2")
+        h2.innerText=el.name
+        div.append(img,h2,p)
+         document.getElementById("container-mid-flex-right").append(div)
+     })
+    }
+    function integration(){
+        displaydata(integrationarr)
+    }
+    function analytics(){
+        displaydata(analyticsarr)
+    }
+    function browser(){
+        displaydata(browserarr)
+    }
+    function communication(){
+        displaydata(communicationarr)
+    }
+    function contracts(){
+        displaydata(contractsarr)
+    }
+    function development(){
+        displaydata(developmentarr)
+      }
+    function harvest(){
+        window.location.href="tryharvest.html"
+    }
+</script>

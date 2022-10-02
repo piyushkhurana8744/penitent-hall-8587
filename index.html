@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/0c167b58fa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            background-color: #fff8f1;
+            font-family: MuotoWeb,sans-serif;
+        }
+        .vl{
+        color: grey;
+        font-size: 50px;
+       }
+       #container-top{
+        width: 95%;
+        margin: auto;
+        display: flex;
+       justify-content: space-between;
+        margin-top: 20px;
+       }
+       #container-top-left{
+         width: 40%;
+         margin: auto;
+       }
+       #container-top-left button{
+        padding: 10px 20px 10px 20px;
+        background-color:#fa5d00 ;
+        border-radius: 15px;
+        border: none;
+        font-size: 20px;
+        color: #fff;
+        cursor: pointer;
+       }
+       #header{
+        margin-top: 20px;
+         font-style: normal;
+         font-size: 42px;
+         line-height: 56px;
+         font-weight: 400;
+       }
+
+       #header-down{
+        margin-top: 20px;
+        font-size: 20px;
+        color: #846e6d;
+        line-height: 30px;
+       }
+       #container-top-right{
+        width: 50%;
+       }
+       #img1{
+       height: 30px;
+       }
+       .img2{
+        margin-top: 140px;
+        width:100%;
+        height: 500px;
+       }
+       input{
+        margin-top: 20px;
+        font-size: 25px;
+       }
+       button+p{
+        font-size: 20px;
+        color: #846e6d;
+        margin-top: 15px;
+       }
+       #container-top-left>div{
+        display: flex;
+        gap: 20px;
+        align-items:center;
+       }
+       #container-top-left h4>span{
+        color:#846e6d ;
+        margin-right: 500px;
+       }
+       #top-down{
+        width: 90%;
+        margin: auto;
+        margin-top: 30px;
+       }
+       #container-top-down{
+        display: grid;
+        display: grid;
+        grid-template-columns: repeat(8,1fr);
+        grid-template-rows: repeat(1,150px);
+        gap: 20px;
+        
+       }
+       #container-top-down>div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       }
+       #container-top-down img{
+        width: 100%;
+        height:40%;
+        opacity: .5;
+       }
+       #top-down-header{
+        display: flex;
+        gap: 10px;
+       }
+    hr{
+        margin-top: 20px;
+    }
+    #container-top-down1{
+        width: 90%;
+        margin: auto;
+        margin-top: 70px;
+        line-height: 60px;
+        padding-bottom: 40px;
+    }
+    #container-top-down1 p{
+        font-size: 42px;
+    }
+    #container-top-down1 p+p{
+        font-size: 30px;
+        color: #846e6d;
+    }
+    #container-top-down1-content{
+        display: flex;
+        gap: 20px;
+    }
+    #container-top-down1-left{
+        width: 40%;
+        margin-top: 120px;
+    }
+    #container-top-down1-left>div{
+        border: 1px solid #fa5d00;
+        line-height: 50px;
+        padding: 10px;
+        border-radius: 20px;
+        margin-top: 30px;
+        
+    }
+    #container-top-down1-left>div:hover{
+        color: #fa5d00;
+        background-color: #faeae3;
+        transition: background .2s;
+    }
+    
+    .container-top-down1-left-flex{
+        width: 90%;
+        display: flex;
+        gap: 20px;
+        margin: auto;
+    }
+    #container-top-down1-left p{
+        font-size: 22px;
+        font-family:MuotoWeb,sans-serif;
+    }
+    #container-top-down1-left p+p{
+        font-size: 17px;
+        line-height: 20px;
+        color:black;
+        font-family:MuotoWeb,sans-serif; 
+    }
+    #container-top-down1-right{
+        width: 60%;
+        margin: auto;
+    }
+    .container-top-down1-left-flex img{
+        width: 15%;
+    }
+    #container-top-down1 button{
+        padding: 10px 20px 10px 20px;
+        background-color:#1d1e1c ;
+        border-radius: 15px;
+        border: none;
+        font-size: 20px;
+        color: #fff;
+        cursor: pointer;
+    }
+    #contaienr-mid{
+        
+        width: 90%;
+        display: flex;
+        margin: auto;
+        justify-content: space-between;
+        margin-top: 50px;
+        padding: 40px;
+
+    }
+    #container-mid-left{
+        width: 40%;
+    }
+    #container-mid-left img{
+        width: 100%;
+        height: 400px;
+    }
+    #container-mid-right{
+        width: 50%;
+    }
+    #container-mid-right p{
+        font-size: 42px;
+        margin-top: 20px;
+    }
+    #container-mid-right button{
+        padding: 10px 20px 10px 20px;
+        background-color:#1d1e1c ;
+        border-radius: 15px;
+        border: none;
+        font-size: 20px;
+        color: #fff;
+        margin-top: 30px;
+        cursor: pointer;
+    }
+    #container-mid1{
+        width: 90%;
+        margin: auto;
+        margin-top: 40px;
+        padding-bottom: 20px;
+    }
+    #container-mid1 p{
+        font-size: 36px;
+        margin-top: 20px;
+    }
+    #container-mid1-content{
+        display: flex;
+        width: 90%;
+        margin: auto;
+        gap: 20px;
+    }
+    #container-mid1-left{
+      width: 45%;
+      border-left: 1px solid #fa5d00;
+      border-right: 1px solid #fa5d00;
+      padding: 10px;
+    }
+    #container-mid1-content-right{
+        width: 40%;
+        border-right: 1px solid #fa5d00;
+    }
+    #container-mid1-content-right img{
+        width: 95%;
+        height: 100%;
+    }
+    #container-mid1 button{
+        padding: 10px 20px 10px 20px;
+        background-color:#1d1e1c ;
+        border-radius: 15px;
+        border: none;
+        font-size: 20px;
+        color: #fff;
+        margin-top: 30px;
+        cursor: pointer;
+    }
+    #container-mid2{
+        width: 90%;
+        margin: auto;
+        margin-top: 40px;
+        display: flex;
+
+    }
+    #container-mid2-left{
+        width: 40%;
+        margin: auto;
+        line-height: 70px;
+    }
+    #container-mid2-right{
+        width: 50%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1,fr);
+        grid-template-rows: repeat(auto,300px);
+        padding: 20px;
+    }
+    #container-mid2-right>div{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        border-top: 1px solid #fa5d00;
+        border-bottom: 1px solid #f9f7f6;
+        padding: 10px;
+    }
+    #container-mid2-right>div:hover{
+        color: #fa5d00;
+        background-color: #faeae3;
+        transition: background .2s;
+    }
+    #footer-up{
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        margin-top:70px ;
+        padding: 20px;
+        padding-bottom: 80px;
+    }
+    #footer-up-left{
+        width: 55%;
+    }
+    #footer-up-left img{
+        width: 60%;
+        height: 80%;
+    }
+    #footer-up-right{
+        width: 40%;
+    }
+    #footer-up-right img{
+        width:80%;
+        height: 80%;
+    }
+    #footer-up-left button{
+        padding: 10px 20px 10px 20px;
+        background-color:#fa5d00 ;
+        border-radius: 15px;
+        border: none;
+        font-size: 20px;
+        color: #fff;
+        cursor: pointer;
+    }
+    #navbar_sign a{
+        color: #616161;
+        text-decoration: none;
+      }
+      #navbar_sign a:hover{
+        color: #fa5d00;
+      }
+      
+    </style>
+    
+</head>
+<body>
+    <div id="navbar">
+        <div id="logo">
+            <a id="home" href="index.html">
+                <img src="https://logos-world.net/wp-content/uploads/2022/04/Harvest-Logo.png" alt="">
+               </a>
+           <div class="vl">|</div>
+           <a href="why harvest.html"><p>Why harvest?</p></a>
+           <a href="features.html"><p>Features</p></a>
+           <a href="customers.html"><p>Customers</p></a>
+           <a href="integration.html"><p>Intrgretion</p></a>
+           <a href="pricing.html"><p>Pricing</p></a>
+        </div>
+        <div id="navbar_sign">
+            <p><a href="signin.html">Sign in</a></p>
+           <button onclick="harvest()">Try Harvest free</button>
+        </div>
+      </div>
+      <div id="container-top">
+        <div id="container-top-left" >
+            <div>
+                <img id="img1" src="https://res.cloudinary.com/spiralyze/image/upload/v1653372983/Harvest/4002_Harvest_Time_Tracking_LP_Lock_Hero_G2_Ribbon/Rate_stars.svg" alt="">
+                <h4>4.6 <span>(748 reviews)</span></h4>
+            </div>
+             <p id="header">Time tracking your team wants to use</pid=>
+           <p id=header-down>Finally, an easy way to track time across projects. Reports, invoicing, and more. All in just a few clicks.</p> 
+           <input type="text" placeholder="work email">
+           <button>Get Started</button>
+           <p>Free 30-day trial. No credit card required.</p>
+        </div>
+        <div id="container-top-right">
+            <img class="img2" src="https://res.cloudinary.com/spiralyze/image/upload/f_auto/Harvest/1001-Harvest-Home-SPZ-Hero/desktop-hero-img.png" alt="">
+        </div>
+      </div>
+      <div id="top-down">
+        <div id="top-down-header">
+            <h1>70,000+ companies track time with Harvest</h1>
+            <div>
+                <hr width="700px" color="red"
+                size="1">
+            </div>
+        
+        </div>
+        
+        <div id="container-top-down">
+           <div>
+            <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/customer-logos/featured-vw.svg?noresize" alt="">
+           </div>
+           <div>
+            <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/customer-logos/featured-aclu.svg?noresize" alt="">
+           </div>
+           <div>
+            <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/customer-logos/featured-conde.svg?noresize" alt="">
+           </div>
+           <div>
+            <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/customer-logos/featured-dell.svg?noresize" alt="">
+           </div>
+           <div>
+            <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/customer-logos/featured-amnesty.svg?noresize" alt="">
+           </div>
+           <div>
+            <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/customer-logos/featured-deloitte.svg?noresize" alt="">
+           </div>
+           <div>
+            <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/customer-logos/featured-lululemon.svg?noresize" alt="">
+           </div>
+           <div>
+            <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/customer-logos/featured-yale.svg?noresize" alt="">
+           </div>
+        </div>
+        <hr width="100%;" color="red"
+        size="1">
+      </div>
+      <div id="container-top-down1">
+        <h2 style="color: #fa5d00">FEATURES</h2>
+        <p>Everything you need to keep your team ticking</p>
+        <p>Time tracking software that helps you keep time and get insights.</p>
+        <div id="container-top-down1-content">
+           <div id="container-top-down1-left">
+            <div class="container-top-down1-left-flex">
+                <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/homepage/nav-time.svg" alt="">
+                <div>
+                    <p>Time Tracking</p>
+                <p>Simple and intutive time treacking your team love</p>
+                </div>
+                
+            </div>
+            <div class="container-top-down1-left-flex">
+                <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/homepage/nav-reporting.svg" alt="">
+                <div>
+                    <p>Reports and analysis</p>
+                <p>Unlock the insight that help your business thrive</p>
+                </div>
+            </div>
+            <div class="container-top-down1-left-flex">
+                <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/homepage/nav-invoicing.svg" alt="">
+                <div>
+                    <p>Invoicing & payments</p>
+                <p>Seamless invoicing and fast online payments</p>
+                </div>
+            </div>
+           </div>
+           <div id="container-top-down1-right">
+            <img class="img2" src="https://www.getharvest.com/hs-fs/hubfs/screenshot-home-timesheets.png?width=1700&name=screenshot-home-timesheets.png" alt="">
+           </div>
+        </div>
+        <button>Discover all Features</button>
+      </div>
+      <hr style="width:90%;margin:auto"
+      color="red" size="1"
+      >
+    <div id="contaienr-mid">
+        <div id="container-mid-left">
+          <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/illustrations/integrations-home.svg" alt="">
+        </div>
+        <div id="container-mid-right">
+            <h2 style="color: #fa5d00">INTEGRATIONS</h2>
+            <p >Integrated with the tools your team already knows and loves</p>
+            <p style="color:#846e6d;font-size: 30px;line-height: 40px;">Your favorite apps work seamlessly with Harvest so you can keep projects on track however you work.</p>
+            <button>Browse integration</button>
+        </div>
+    </div>
+    <hr style="width:90%;margin:auto"
+      color="red" size="1"
+      >
+      <div id="container-mid1">
+        <h2 style="color: #fa5d00">CUSTOMER STORIES</h2>
+        <p>Helping teams thrive since 2006</p>
+        <p style="color:#846e6d;font-size: 30px;line-height: 40px;">Teams of all sizes, types, and industries trust Harvest to track their time.</p>
+        <div id="container-mid1-content">
+            <div class="vl1"></div>
+             <div id="container-mid1-left">
+                <p style="font-size:30px;line-height: 40px;">
+                    We really focus on work-life balance in remote work… Time tracking reveals if somebody is overburdened and that becomes an immediate conversation.
+                </p>
+                <h3 style="font-size:20px;margin-top: 20px;">Noah Gedrich, Zehner</h3>
+             </div>
+             <div id="container-mid1-content-right">
+                <img src="https://www.getharvest.com/hs-fs/hubfs/homepage/home-photo-zehner.jpg?width=560&height=374&name=home-photo-zehner.jpg" alt="">
+            </div>
+            <div class="vl1"></div>
+        </div>
+        <button>Meet our customers</button>
+        
+      </div>
+      <hr style="width:90%;margin:auto"
+      color="red" size="1"
+      >
+      <div id="container-mid2">
+         <div id="container-mid2-left">
+            <h2 style="color: #fa5d00">LEARNING RESOURCES</h2>
+            <p style="font-size: 37px;line-height: 50px;">Supporting your team along the way</p>
+         </div>
+         <div id="container-mid2-right">
+            <div>
+                <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/homepage/illo-75-folder.svg" alt="">
+                <div>
+                    <p style="font-size:30px">Guides and templates</p>
+                    <p style="font-size:20px;margin-top: 10px;">Learn how to introduce your team to time tracking and most of Harves</p>
+                    
+                </div>
+                <h1 style="color: #fa5d00"><i class="fa-solid fa-arrow-right"></i></h1>
+                
+            </div>
+            <div>
+                <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/homepage/illo-75-laptop.svg" alt="">
+                <div>
+                    <p style="font-size:30px">Webinars</p>
+                    <p style="font-size:20px;margin-top: 10px;">Watch a quick intro to harvest or signup for a live session</p>
+                    
+                </div>
+                <h1 style="color: #fa5d00"><i class="fa-solid fa-arrow-right"></i></h1>
+            </div>
+            <div>
+                <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/homepage/illo-75-help.svg" alt="">
+                <div>
+                    <p style="font-size:30px">Help Center</p>
+                    <p style="font-size:20px;margin-top: 10px;">Find the answer of all your question or get in toch with our freindly Experts</p>
+                    
+                </div>
+                <h1 style="color: #fa5d00"><i class="fa-solid fa-arrow-right"></i></h1>
+            </div>
+         </div>
+      </div>
+      <hr style="width:90%;margin:auto"
+      color="red" size="1"
+      >
+      <div id="footer-up">
+        <div id="footer-up-left">
+            <p style="font-size:50px">Start tracking time today</p>
+            <p style="color: #1d1e1c;font-size:30px;line-height: 40px;margin-top: 10px;">Join 70,000+ companies spending their time wisely with Harvest.</p>
+            <div style="display:flex;gap: 20px;margin-top: 20px;justify-content: center;align-items: center;">
+            <button>Try Harvest free</button>
+            <p style="font-size:22px;color: #846e6d;">Free 30-day trial. No credit card required.</p>
+            </div>
+            
+        </div>
+        <div id="footer-up-right">
+            <img src="https://www.getharvest.com/hubfs/raw_assets/public/harvest-theme/images/illoglyphs/footer-illo-comp.svg" alt="">
+        </div>
+      </div>
+      
+      <div id="footer" style="background-color:#1d1e1c;padding-bottom: 20px;">
+        <div id="footer-flex">
+            <div id="footer-left">
+                <img src="https://logos-world.net/wp-content/uploads/2022/04/Harvest-Logo.png" alt="">
+             </div>
+             <div id="footer-right">
+               <div>
+                <h2>Harvest</h2>
+                <p><a href="index.html">Home</a></p>
+                <p><a href="why harvest.html">Why Harvest?</a></p>
+                <p><a href="features.html">Features</a></p>
+                <p><a href="pricing.html">Pricing</a></p>
+                <p><a href="integration.html">Integrations</a></p>
+                <p>Apps</p>
+                <p>Security</p>
+               </div>
+               <div>
+                <h2>Community</h2>
+                <p>Customer stories</p>
+                <p>Resources</p>
+                <p>Webinars</p>
+                <p>Help & support</p>
+                <p>Integrate with Harvest</p>
+                <p>Time Well Spent</p>
+                <p>Time in This Time</p>
+               </div>
+               
+               <div style="line-height:30px;margin-left: 30px;">
+                <h2>Company</h2>
+                <p>About us</p>
+                <p>Blog</p>
+                <p>Careers</p>
+                <p>Legal</p>
+                <p>Contact us</p>
+               </div>
+             </div>
+        </div>
+        <div style="width:80%;margin:auto">
+            <button>We also make: Harvest Forecast - the fast and simple way to schedule your team across projects.</button>
+        </div>
+         <div id="footer-bottom">
+            <h3>© 2006-2022 Harvest</h3>
+            <div id="footer-bottom-logo">
+                <h3><i class="fa-brands fa-twitter"></i> <span>Twitter</span></h3>
+                <h3><i class="fa-brands fa-linkedin"></i> <span>Linkedin</span></h3>
+                <h3><i class="fa-brands fa-instagram"></i> <span>Instagram</span></h3>
+            </div>
+         </div>
+      </div>
+</body>
+</html>
+<script>
+    function harvest(){
+        window.location.href="tryharvest.html"
+    }
+</script>
